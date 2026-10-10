@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo</title>
+    <link rel="stylesheet" href="interface.css">
+    <link rel="stylesheet" href="calculo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="nav-header">
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="calculo.html">CÁLCULO</a></li>
+                <li><a href="baixar.html">BAIXAR</a></li>
+                <li><a>SOBRE</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+
+    <main>
+        <div id="hero">
+            <img src="assets/img/felca2.png" alt="" id="banner">
+            <div  id="titulo">
+                <h1>
+                    <img src="assets/img/titulo-site.webp" alt="" id="meu-logo">
+                </h1>
+                <span class="subtitulo-branco">Imposto é pra poucos,<br>mas é pra todo mundo</span>
+            </div>
+
+
+
+        <section id="conteudo-baixar-section" >
+            <div id="conteudo-baixar" class="conteudo-main">
+                            <h2>CALCULE SEU IRPF</h2>
+                <p>informe seu salário mensal bruto para calcular seu imposto de renda</p>>
+        <!-----====================input e botoes=========================-->
+                <div id="input-main-group">
+                    <div id="input-group">
+                        <span>Salário bruto (R$)</span>
+                        <input id="area-texto" type="number" placeholder="Ex: 8.500,00" step="0.01">
+                    </div>
+                    
+                    <div id="input-botoes">
+                        <button class="botao-rosa" onclick="calcular()"><img src="assets/img/calculator.png" alt="calculadora icone" class="img-botao">   CALCULAR</button>
+                        <button class="botao-lixo" onclick="lixinho()"> <img src="assets/img/trash-can.png" alt="lixinho" class="img-botao">  LIMPAR</button>
+                    </div>
+                </div>
+        <!-----====================resultado do input=========================-->
+                <div id="results">
+                    <div id="output">
+                        <span>* IRPF A RECOLHER *</span>
+                        <h4 id="resultado">R$ 0,00</h4>
+                    </div>
+
+                    <div id="output">
+                        <span>* ALÍQUOTA EFETIVA *</span>
+                        <h4 id="resultado-2">R$ 0,00</h4>
+                    </div>
+
+                </div>
+
+            
+                        
+                <h3>TABELA DE CONFERÊNCIA (JANEIRO/2024)</h3>
+
+            <div id="box-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SALÁRIO BRUTO</th>
+                            <th>IRPF devido</th>
+                            <th>Alíquota efetiva</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>R$2.000,00</td>
+                            <td>R$ 0,00</td>
+                            <td>0,00%</td>
+                        </tr>
+                        <tr>
+                            <td>R$2.500,00</td>
+                            <td>R$29,10</td>
+                            <td>1,16%</td>
+                        </tr>
+                        <tr>
+                            <td>R$3.000,00</td>
+                            <td>R$79,60</td>
+                            <td>2,65%</td>
+                        </tr>
+                        <tr>
+                            <td>R$4.000,00</td>
+                            <td>R$248,27</td>
+                            <td>6,21%</td>
+                        </tr>
+                        <tr>
+                            <td>R$5.000,00</td>
+                            <td>R$490,04</td>
+                            <td>9,80%</td>
+                        </tr>
+                        <tr>
+                            <td>R$10.000,00</td>
+                            <td>R$1.865,04</td>
+                            <td>18,65%</td>
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+            </div>
+
+                                <div class="information">
+                        <img src="assets/img/information-button.png" class="img-information">
+                        Valores de referência conforme tabela progressiva do IRPF 2024 e
+                        conforme apresentado no documento que o senhor enviou.
+                    </div>
+
+            
+
+
+
+
+
+            </div>
+
+
+
+        </section>
+ 
+    </main>
+
+    <footer>
+        <p>VIVA LIVRE, PLANEJE MELHOR, FUJA DO LEÃO</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+    
+</body>
+</html>
