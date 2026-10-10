@@ -5,6 +5,7 @@
     --black: #1d1d1d;
     --black2: #3e3b34;
     --white: #f2efe8;
+    --offwhite: #e0ded7;
     --babyblue: #e1eae7;
 }
 
@@ -84,15 +85,6 @@ main {
 
         }
 
-        .subtitulo-branco {
-            display: inline-block;
-            font-family: Patrick Hand;
-            color: var(--white);
-            transform: rotate(-3deg);
-            font-size: clamp(1rem, 2.5vw, 1.6rem);
-
-        }
-
 
 
 
@@ -107,7 +99,6 @@ main {
 
 header {
     background-color: var(--black);
-    border-bottom: 2px solid var(--pink);
 }
 
 #nav-header {
@@ -126,11 +117,13 @@ header {
 }
 
 #nav-header li {
+    color: var(--offwhite);
+    font-weight: 600;
     transition: 0.3s;
 }
 
 #nav-header li:hover {
-    color: var(--pink);
+    color: white;
 }
 
 
